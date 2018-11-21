@@ -1,13 +1,13 @@
-## Xmipp Portal
+## 3DEMBenchmark Portal
 
-> http://xmipp.i2pc.es
+> http://3dembenchmark.i2pc.es
 
 ## Set up
 
 ### Dependencies
 
 ```
-$ cd xmipp-portal
+$ cd 3dembenchmark
 $ virtualenv --python /usr/bin/python2 env
 $ env/bin/pip install -r requirements.txt
 ```
@@ -24,42 +24,25 @@ $ env/bin/python manage.py runserver
 
 ```
 <VirtualHost *:80>
-  ServerName xmipp.i2pc.es
-  Alias /static /home/ubuntu/xmipp-portal/staticfiles
+  ServerName 3dembenchmark.i2pc.es
+  Alias /static /home/ubuntu/3dembenchmark/staticfiles
 
-  <Directory /home/ubuntu/xmipp-portal/staticfiles>
+  <Directory /home/ubuntu/3dembenchmark/staticfiles>
     Require all granted
   </Directory>
 
-  <Directory /home/ubuntu/xmipp-portal/main>
+  <Directory /home/ubuntu/3dembenchmark/main>
     <Files wsgi.py>
       Require all granted
     </Files>
   </Directory>
 
-  WSGIDaemonProcess xmipp-portal python-home=/home/ubuntu/xmipp-portal/env python-path=/home/ubuntu/xmipp-portal
-  WSGIProcessGroup xmipp-portal
-  WSGIScriptAlias / /home/ubuntu/xmipp-portal/main/wsgi.py
+  WSGIDaemonProcess 3dembenchmark python-home=/home/ubuntu/3dembenchmark/env python-path=/home/ubuntu/3dembenchmark
+  WSGIProcessGroup 3dembenchmark
+  WSGIScriptAlias / /home/ubuntu/3dembenchmark/main/wsgi.py
 </VirtualHost>
 ```
 
 ## Admin interface (requires password)
 
-> http://scipion.i2pc.es/admin/
-
-## Wiki
-
-The old XMIPP wiki uses TWiki. To convert it to a Github wiki we may use [twiki2markdown](https://github.com/jcodagnone/twiki2markdown).
-
-First, locate the root directory of the TWiki, a directory usually named `TWiki` that contains one `txt`/`txt.v` file per page. Copy this directory to your machine and then run:
-
-```
-$ org=ORGANISATION; repo=REPO
-$ git clone https://github.com/jcodagnone/twiki2markdown
-$ cd twiki2markdown
-$ git clone git@github.com:$org/$repo.wiki.git
-# tested with Ruby 2.3.0
-$ ruby -I lib bin/twiki2markdown -v -f /path/to/TWiki -t $repo.wiki/
-$ cd $repo.wiki/
-$ git push
-```
+> http://3dembenchmark.i2pc.es/admin/

@@ -48,51 +48,23 @@
 
     <div id="wrapMain">
       <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <h3>
-                  <a href="{% url 'page' %}" >
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                    Particle Picking (Demo)
-                  </a>
-                </h3>
-                <p>
-                  Automatic Particle Picking algorithms are crucial to achieve high resolution in which thousands of particle projections must be combined in 3D. Datasets under this task help to design algorithms with a low number of false positives (wrongly picked particles), a high yield (picking so many particles as possible in each micrograph), and as centered as possible.
-                </p>
-              </div>
+        <h3>
+          <a href="{% url 'home' %}" >
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            Particle Picking (Demo)
+          </a>
+        </h3>
 
-              <div class="col-md-4">
-                <h3>
-                  <a href="{% url 'page' %}" >
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                    CTF detection
-                  </a>
-                </h3>
-                <p>
-                  The CTF estimation challenge is a initiative of the Madrid Instruct Image Processing Center (I2PC) in collaboration with the National Center for Macromolecular Imaging (NCMI) at Houston. By participating in this challenge, researchers will have the opportunity to test their ability estimating some of the key parameters of the Electron Microscope Contrast Transfer Function on a large micrograph data set produced by well-known laboratories on a wide set of experimental conditions.
-                </p>
-              </div>
-
-              <div class="col-md-4">
-                <h3>
-                  <a href="{% url 'page' %}" >
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                    Resolution Enhancement
-                  </a>
-                </h3>
-                <p>
-                  
-                  The IEEE SP Cup is a competition that provides undergraduate students with the opportunity to form teams and work together to solve a challenging and interesting real-world problem using signal-processing techniques and methods. Three teams will be selected to present their work, and prizes will be awarded at ICASSP 2014. The title of this inaugural competition is "Image restoration/Super-resolution for Single Particle Analysis", proposed by the Bio Imaging and Signal Processing Technical Committee.
-                </p>
-              </div>
-            </div>
-          </div>
+        <p>
+          Automatic Particle Picking algorithms are crucial to achieve high resolution in which thousands of particle projections must be combined in 3D. Datasets under this task help to design algorithms with a low number of false positives (wrongly picked particles), a high yield (picking so many particles as possible in each micrograph), and as centered as possible.
+        </p>
+      </div>
     </div>
 
     <footer id="footer" class="footerStyle">
       {% include "_footer.html" %}
     </footer>
-    
+
     <script src="{% static "js/vendor/jquery-1.11.2.min.js" %}"></script>
     <script src="{% static "js/vendor/bootstrap.min.js" %}"></script>
   </body>

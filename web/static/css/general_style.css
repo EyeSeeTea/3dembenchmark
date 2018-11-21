@@ -25,9 +25,9 @@ html, body {
 }
 
 #footer {
-  height: 140px;
+  height: 40px;
   clear: both;
-  padding-top: 48px;
+  padding-top: 10px;
 }
 
 /* .layout-outer {padding-bottom: 110px;} */
@@ -555,4 +555,12 @@ progress[value]::-webkit-progress-value {
  border-radius: 2px;
  background-size: 35px 20px, 100% 100%, 100% 100%;
  border-radius: 4px;
+}
+
+body .mynav {
+    background: #FFF;
+}
+
+.container .headerTitle {
+    color: #777;
 }
