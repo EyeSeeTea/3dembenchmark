@@ -1,0 +1,21 @@
+	{% load static %}
+	
+ 	<nav class="navbar mynav">
+	  <div class="container">
+		  <a href="{% url 'home' %}">
+			  <img class="headerImage"  src="{% static "img/embenchmark_logo.gif" %}">
+		  </a>
+		  <div class="headerTitle">
+		  		3D Electron Microscopy Benchmark
+		  </div>
+		  <div class="logoLine">
+		  		<a href="http://www.inab.org/">
+				  <img class="logosLine" src="{% static "img/INB_logo.gif" %}" />
+				</a>
+
+				<a href="http://www.instruct-fp7.eu/">
+				  <img class="logosLine" src="{% static "img/logoInstruct.png" %}" />
+				</a>
+		  </div>
+	  </div>
+  </nav>
