@@ -63,6 +63,47 @@ textarea {
 	font-size: 0.9em;
 }
 
+.taskImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+.datasetImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.datasetsBox {
+	margin: 10px 0px;
+	padding: 20px;
+	margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;	
+}
+
+.spacer {
+	display: block;
+	height: 40px;
+}
+
+.center {
+	text-align: center;
+}
+
+.aboutDetails {
+	margin: 10px 0px;
+	padding: 20px;
+	margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
 /* HEADER */
 header {
 	/* height: 100px; */
@@ -88,7 +129,7 @@ header {
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 	
-	margin-bottom: 2px;
+	margin-bottom: 20px;
 }
 
 header #headerMainContainer{

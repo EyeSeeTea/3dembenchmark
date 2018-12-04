@@ -6,3 +6,6 @@ def home(request):
 
 def page(request):
     return render_to_response('page/index.html')
+
+def ctf(request):
+    return render_to_response('ctf/index.html')
