@@ -134,9 +134,11 @@ header #headerRightContainer{
 */
 
 a {
-	color: #630000;
+	color: #cf264b;
+	text-decoration: none;
 }
 a:hover {
-	color: firebrick;
-	text-decoration: none;
+	color: #cf264b;
+	text-transform: bold;
+	text-decoration: underline;
 }

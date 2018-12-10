@@ -66,12 +66,13 @@
           <h2>
               Particle Picking (Demo)
           </h2>
+          <h4>Particle Picking for Cryo-Electron Microscopy</h4>
 
           <p>
             Automatic Particle Picking algorithms are crucial to achieve high resolution in which thousands of particle projections must be combined in 3D. Datasets under this task help to design algorithms with a low number of false positives (wrongly picked particles), a high yield (picking so many particles as possible in each micrograph), and as centered as possible.
           </p>
           <a class="btn btn-sm btn-danger" href="#" role="button">See results</a>
-          <a class="btn btn-sm btn-outline-secondary" href="#" role="button">Download information</a>
+          <a class="btn btn-sm btn-outline-secondary" href="{% static "docs/particlePicking.docx" %}" role="button">Download information</a>
 
           <h3>
             Datasets
@@ -90,22 +91,19 @@
                   Images were acquired, using a Philips CM200 TEM equipped with a 2Kx2K CCD Tietz camera, as defocal pairs at a nominal magnification of 66,000x and a voltage of 120 KeV, using the Leginon system (Potter et al., 1999 ; Carragher et al., 2000). Pixel size is 2.2Å at the specimen and the accumulated dose for each high magnification image area was ~10 e/Å².
                 </p>
                 <p>
-                  To obtain a true positive the particle must be picked in a circle of pixels radio around the gold standard coordinates. <a href="{% url 'page' %}" >How to pick?</a>
+                  To obtain a true positive the particle must be picked in a circle of pixels radio around the gold standard coordinates. <a href="{% static "docs/KLHChallenge.docx" %}" >How to pick?</a>
                 </p>
                 <p class="font-italic" style="font-size: 0.7em; margin-bottom: 20px;">
                   Data kindly provided by The Scripps Research Institute Automated Molecular Imaging Group (AMI)
                 </p>
                 <div class="col-md-4 center">
                   <a class="btn btn-sm btn-danger" href="#" role="button">DownloadTest (2 micrographs)</a><br />
-                  <a class="btn btn-sm btn-secondary" href="#" role="button">Upload Result</a>
                 </div>
                 <div class="col-md-4 center">
-                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadTraining (30 micrographs)</a><br />
-                  <a class="btn btn-sm btn-secondary" href="#" role="button">Upload Result</a>                
+                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadTraining (30 micrographs)</a><br />              
                 </div>
                 <div class="col-md-4 center">
-                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadBlind Test (50 micrographs)</a><br />
-                  <a class="btn btn-secondary btn-sm" href="#" role="button">Upload Result</a>                    
+                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadBlind Test (50 micrographs)</a><br />                  
                 </div>                            
               </div>
             </div>
@@ -119,25 +117,22 @@
                   308 micrographs, coordinate centers of ~9.000 particles, a preliminary 3D reconstruction. Images were automatically sorted into defocus groups covering a range between -0.5 and -5.1 µm.
                 </p>
                 <p>
-                  Human adenovirus type 2(Ad2 ts1) samples were dialyzed for 1 hour at 4°C against PBS, applied to freshly carbon-coated, glow discharged Quantifoil R2/4 300 mesh Cu/Rh grids, and vitrified in liquid ethane using a Le ica CPC plunger. Grids were mounted in a Gatan 626 cryostage and examined in a FEI Tecnai G2 FEG microscope operating at 200 kV. Micrographs were recorded on Kodak SO-163 film under low dose conditions at a nominal magnification of 50,000×, and digitized in a Zeiss Photoscan TD scanner using a step size of 7 µm (1.4 Å in the sample). <a href="{% url 'page' %}">More Information</a>
+                  Human adenovirus type 2(Ad2 ts1) samples were dialyzed for 1 hour at 4°C against PBS, applied to freshly carbon-coated, glow discharged Quantifoil R2/4 300 mesh Cu/Rh grids, and vitrified in liquid ethane using a Le ica CPC plunger. Grids were mounted in a Gatan 626 cryostage and examined in a FEI Tecnai G2 FEG microscope operating at 200 kV. Micrographs were recorded on Kodak SO-163 film under low dose conditions at a nominal magnification of 50,000×, and digitized in a Zeiss Photoscan TD scanner using a step size of 7 µm (1.4 Å in the sample). <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2749003/?tool=pubmed" target="_new">More Information</a>
                 </p>
                 <p>
-                  To obtain a true positive the particle must be picked in a circle of pixels radio around the gold standard coordinates. <a href="{% url 'page' %}" >How to pick?</a>
+                  To obtain a true positive the particle must be picked in a circle of pixels radio around the gold standard coordinates. <a href="{% static "docs/Ad2ts1Challenge.docx" %}" >How to pick?</a>
                 </p>
                 <p class="font-italic" style="font-size: 0.7em; margin-bottom: 20px;">
-                  Data kindly provided by <a href="{% url 'page' %}" >Dr. SanMartin</a>
+                  Data kindly provided by <a href="http://www.cnb.uam.es/content/research/macromolecular/sanmartin/index.php?l=1" target="_new">Dr. SanMartin</a>
                 </p>
                 <div class="col-md-4 center">
                   <a class="btn btn-sm btn-danger" href="#" role="button">DownloadTest (2 micrographs)</a><br />
-                  <a class="btn btn-sm btn-secondary" href="#" role="button">Upload Result</a>
                 </div>
                 <div class="col-md-4 center">
-                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadTraining (30 micrographs)</a><br />
-                  <a class="btn btn-sm btn-secondary" href="#" role="button">Upload Result</a>                
+                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadTraining (30 micrographs)</a><br />              
                 </div>
                 <div class="col-md-4 center">
-                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadBlind Test (50 micrographs)</a><br />
-                  <a class="btn btn-secondary btn-sm" href="#" role="button">Upload Result</a>                    
+                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadBlind Test (50 micrographs)</a><br />                   
                 </div>                            
               </div> 
             </div>
