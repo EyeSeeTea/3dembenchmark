@@ -15,8 +15,8 @@ header,section,footer,aside,nav,article,hgroup {
 	display: block;
 } /* For html5 unsupported browsers */
 
-html, body { 
-	height: 100%; 
+html, body {
+	height: 100%;
 }
 
 #wrapMain {
@@ -53,7 +53,7 @@ a:hover {
 	float: left;
 }
 
-h2 {
+h2, h4 {
 	color: #cf264b;
 }
 
@@ -88,7 +88,7 @@ textarea {
 	padding: 20px;
 	margin-bottom: 2rem;
     background-color: #e9ecef;
-    border-radius: .3rem;	
+    border-radius: .3rem;
 }
 
 .spacer {
@@ -111,7 +111,7 @@ textarea {
 /* HEADER */
 header {
 	/* height: 100px; */
-	
+
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   	display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -120,19 +120,19 @@ header {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	
+
 	-webkit-flex-flow: row;
 	-moz-flex-flow: row;
 	-ms-flex-flow: row;
 	-o-flex-flow: row;
 	flex-flow: row;
-	
+
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
-	
+
 	margin-bottom: 20px;
 }
 
@@ -200,9 +200,9 @@ aside {
 	background: -ms-linear-gradient(top, #e3e3e3 0%,#cccccc 100%); IE10+
 	background: linear-gradient(to bottom, #e3e3e3 0%,#cccccc 100%); W3C
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#cccccc',GradientType=0 ); IE6-9
-	
+
 	padding-left: 20px; */
-	
+
 	/* display: -webkit-box;      OLD - iOS 6-, Safari 3.1-6
   	display: -moz-box;         OLD - Firefox 19- (buggy but mostly works)
   	display: -ms-flexbox;      TWEENER - IE 10
@@ -211,19 +211,19 @@ aside {
 	display: -o-flex;
 	display: -webkit-flex;
 	display: flex;
-	
+
 	-webkit-flex-flow: row;
 	-moz-flex-flow: row;
 	-ms-flex-flow: row;
 	-o-flex-flow: row;
 	flex-flow: row;
-	
+
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;*/ 
-} 
+	flex-wrap: wrap;*/
+}
 
 /* FOOTER */
 
@@ -257,11 +257,11 @@ footer #footerMainContainer{
 footer #footerLeftContainer{
 	width: 50%;
 	float:left;
-	padding: 20px 0px 0px 20px;	
+	padding: 20px 0px 0px 20px;
 }
 footer #footerLogoContainer{
-	
-	
+
+
 }
 footer #footerRightContainer{
 	float: right;
@@ -390,7 +390,7 @@ table#data th {
 }
 
 table#data th:first-child {
-	
+
 	text-align: left;
 	padding-left: 20px;
 }
@@ -425,7 +425,7 @@ table#data tr.selected:hover td {
 }
 table#data tr:nth-child(odd) {
 	background-color: #EAEBFF;
-}	
+}
 table#data tr:nth-child(even) {
 	background-color: #FFF;
 }
