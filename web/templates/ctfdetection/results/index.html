@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="{% static "ms-icon-144x144.png" %}">
     <meta name="theme-color" content="#ffffff">
 
-    <title>3DEMBenchmark</title>
+    <title>3DEMBenchmark - CTF Detection - Results</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
@@ -65,6 +65,7 @@
         <div class="row">
           <!-- CONTENT BEGINS -->
           <h2>CTF detection &gt; CTF Estimation Challenge</h2>
+          <span class="sm-spacer"></span>
           <h4>Experimental Estimation</h4>
           <div class="table-responsive">
               <table class="table">
@@ -103,7 +104,7 @@
                   <tbody>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=206">206</a><br></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=206&amp;subtaskId=2">Test 1</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults206' %}">Test 1</a><br></td>
                           <td>SuperUser </td>
                           <td>Test Dataset<br></td>
                           <td>0.0744<br> ±0.1415<br></td>
@@ -113,7 +114,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=250">250</a><br></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=250&amp;subtaskId=2">w</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults250' %}">w</a><br></td>
                           <td>Roberto Marabini</td>
                           <td>Test Dataset<br></td>
                           <td>0.1282<br> ±0.3087<br></td>
@@ -123,7 +124,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=256">256</a><br></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=256&amp;subtaskId=2">test dataset</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults256' %}">test dataset</a><br></td>
                           <td>Rui Yan</td>
                           <td>Test Dataset</td>
                           <td>-0.0115<br> ±0.0463<br></td>
@@ -133,7 +134,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=257">257</a><br></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=257&amp;subtaskId=2">Test set</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults257' %}">Test set</a><br></td>
                           <td>Rouslan Efremov</td>
                           <td>Test Dataset</td>
                           <td>0.0362<br> ±0.1425</td>
@@ -143,7 +144,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=292">292</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=292&amp;subtaskId=2">updated data for sets 3 and 4</a></td>
+                          <td><a href="{% url 'ctfdetectionresults292' %}">updated data for sets 3 and 4</a></td>
                           <td>Rouslan Efremov</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -153,7 +154,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=296">296</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=296&amp;subtaskId=2">set001-set009 Solution</a></td>
+                          <td><a href="{% url 'ctfdetectionresults296' %}">set001-set009 Solution</a></td>
                           <td>Rui Yan</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -163,7 +164,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=297">297</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=297&amp;subtaskId=2">CTF estimated with command line ctffind3</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults297' %}">CTF estimated with command line ctffind3</a><br></td>
                           <td>Martyn Winn</td>
                           <td>Test Dataset<br></td>
                           <td>0.0239<br> ±0.1411</td>
@@ -173,7 +174,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=303">303</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=303&amp;subtaskId=2">set_001_EMAN2</a></td>
+                          <td><a href="{% url 'ctfdetectionresults303' %}">set_001_EMAN2</a></td>
                           <td>Xiaojun Huang</td>
                           <td>Challenge Dataset<br></td>
                           <td></td>
@@ -183,7 +184,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=310">310</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=310&amp;subtaskId=2">Best of Appion among Ace1, Ace2, and ctffind for novice</a></td>
+                          <td><a href="{% url 'ctfdetectionresults310' %}">Best of Appion among Ace1, Ace2, and ctffind for novice</a></td>
                           <td>Amber Herold</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -193,7 +194,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=336">336</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=336&amp;subtaskId=2">set_005,6,9</a></td>
+                          <td><a href="{% url 'ctfdetectionresults336' %}">set_005,6,9</a></td>
                           <td>Liangliang Kong</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -203,7 +204,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=207">207</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=207&amp;subtaskId=2">Test 2</a></td>
+                          <td><a href="{% url 'ctfdetectionresults207' %}">Test 2</a></td>
                           <td>SuperUser </td>
                           <td>Test Dataset</td>
                           <td>-0.0794<br> ±0.486</td>
@@ -213,7 +214,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=342">342</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=342&amp;subtaskId=2">ewer</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults342' %}">ewer</a><br></td>
                           <td>Roberto Marabini</td>
                           <td>Challenge Dataset<br></td>
                           <td></td>
@@ -223,7 +224,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=344">344</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=344&amp;subtaskId=2">CTF estimation with IMAGIC</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults344' %}">CTF estimation with IMAGIC</a><br></td>
                           <td>Ricardo Righetto</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -233,7 +234,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=282">282</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=282&amp;subtaskId=2">Xmipp 3.0</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults282' %}">Xmipp 3.0</a><br></td>
                           <td>Javi Vargas</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -243,7 +244,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=287">287</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=287&amp;subtaskId=2">Results obtained by CTFFIND3 - with corrected datasets 3 &amp; 4</a></td>
+                          <td><a href="{% url 'ctfdetectionresults287' %}">Results obtained by CTFFIND3 - with corrected datasets 3 &amp; 4</a></td>
                           <td>Nikolaus Grigorieff</td>
                           <td>Challenge Dataset<br></td>
                           <td></td>
@@ -253,7 +254,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=291">291</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=291&amp;subtaskId=2">Xmipp 3.0 COSS</a></td>
+                          <td><a href="{% url 'ctfdetectionresults291' %}">Xmipp 3.0 COSS</a></td>
                           <td>Carlos Oscar Sorzano</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -263,7 +264,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=298">298</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=298&amp;subtaskId=2">CTF challenge</a></td>
+                          <td><a href="{% url 'ctfdetectionresults298' %}">CTF challenge</a></td>
                           <td>Slavica Jonic</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -273,7 +274,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=299">299</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=299&amp;subtaskId=2">CTF Results from PARTICLE</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults299' %}">CTF Results from PARTICLE</a><br></td>
                           <td>James Chen</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -283,7 +284,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=300">300</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=300&amp;subtaskId=2">ACE2 Expert final submission</a></td>
+                          <td><a href="{% url 'ctfdetectionresults300' %}">ACE2 Expert final submission</a></td>
                           <td>Neil Voss</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -293,7 +294,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=301">301</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=301&amp;subtaskId=2">Appion Interactive CTF Submission</a></td>
+                          <td><a href="{% url 'ctfdetectionresults301' %}">Appion Interactive CTF Submission</a></td>
                           <td>Neil Voss</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -303,7 +304,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=304">304</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=304&amp;subtaskId=2">Phasor CTF dataset</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults304' %}">Phasor CTF dataset</a><br></td>
                           <td>Neil Voss</td>
                           <td>Challenge Dataset<br></td>
                           <td></td>
@@ -313,7 +314,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=312">312</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=312&amp;subtaskId=2">Bsoft automated CTF fitting</a></td>
+                          <td><a href="{% url 'ctfdetectionresults312' %}">Bsoft automated CTF fitting</a></td>
                           <td>Bernard Heymann</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -323,7 +324,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=314">314</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=314&amp;subtaskId=2">CTF results with FEI prototype</a></td>
+                          <td><a href="{% url 'ctfdetectionresults314' %}">CTF results with FEI prototype</a></td>
                           <td>Erik Franken</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -333,7 +334,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=318">318</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=318&amp;subtaskId=2">pySPIDER</a></td>
+                          <td><a href="{% url 'ctfdetectionresults318' %}">pySPIDER</a></td>
                           <td>Robert Langlois</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -343,7 +344,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=337">337</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=337&amp;subtaskId=2">CTF Estiamtion TU Delft/LUMC</a></td>
+                          <td><a href="{% url 'ctfdetectionresults337' %}">CTF Estiamtion TU Delft/LUMC</a></td>
                           <td>Milos Vulovic</td>
                           <td>Challenge Dataset<br></td>
                           <td></td>
@@ -353,7 +354,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=339">339</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=339&amp;subtaskId=2">EMAN2.1 - rough, whole frame, no astig</a></td>
+                          <td><a href="{% url 'ctfdetectionresults339' %}">EMAN2.1 - rough, whole frame, no astig</a></td>
                           <td>Steven Ludtke</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -363,7 +364,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=340">340</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=340&amp;subtaskId=2">EMAN2.1 - particle-based, no astig</a></td>
+                          <td><a href="{% url 'ctfdetectionresults340' %}">EMAN2.1 - particle-based, no astig</a></td>
                           <td>Steven Ludtke</td>
                           <td>Challenge Dataset</td>
                           <td></td>
@@ -373,7 +374,7 @@
                       </tr>
                       <tr>
                           <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=341">341</a></td>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/LoadSolutionDetail.htm?solutionId=341&amp;subtaskId=2">EMAN2.1 - particle-based, with astigmatism</a></td>
+                          <td><a href="{% url 'ctfdetectionresults341' %}">EMAN2.1 - particle-based, with astigmatism</a></td>
                           <td>Steven Ludtke</td>
                           <td>Challenge Dataset</td>
                           <td></td>

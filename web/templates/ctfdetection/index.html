@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="{% static "ms-icon-144x144.png" %}">
     <meta name="theme-color" content="#ffffff">
 
-    <title>3DEMBenchmark</title>
+    <title>3DEMBenchmark - CTF Detection</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
@@ -58,7 +58,7 @@
             </div>
         </div>
       </div>
-    </header>    
+    </header>
 
     <div id="wrapMain">
       <div class="container">
@@ -66,20 +66,21 @@
           <h2>
               CTF detection
           </h2>
-          <h4>CTF Estimation Challenge</h4>          
+          <span class="sm-spacer"></span>
+          <h4>CTF Estimation Challenge</h4>
 
           <p>
             The CTF estimation challenge is a initiative of the Madrid Instruct Image Processing Center (I2PC) in collaboration with the National Center for Macromolecular Imaging (NCMI) at Houston. By participating in this challenge, researchers will have the opportunity to test their ability estimating some of the key parameters of the Electron Microscope Contrast Transfer Function on a large micrograph data set produced by well-known laboratories on a wide set of experimental conditions.
           </p>
-          <div class="col-md-6"> 
-            <p> 
+          <div class="col-md-6">
+            <p>
               <b>Key Dates</b><br />
               Opening date: 8 March 2013<br />
               Closing date: 31st August 2013<br />
               Here you can find more information about <a href="http://i2pc.cnb.csic.es/3dembenchmark/LoadCtfInformation.htm?anchor=h.5rhhcn64m3v5" >key dates</a> and <a href="http://i2pc.cnb.csic.es/3dembenchmark/LoadCtfInformation.htm?anchor=h.v8939q9utt4t" >how to participate</a>
             </p>
           </div>
-          <div class="col-md-6">           
+          <div class="col-md-6">
             <p>
               <b>Video Tutorials</b><br />
             </p>
@@ -142,19 +143,19 @@
                       <td>Tecnai Polara, Gatan K2 CMOS DDD (counting mode), no Carbon, 300 kV</td>
                       <td>J. Frank/ B.Grassucci </td>
                       <td>004</td>
-                    </tr>    
+                    </tr>
                     <tr>
                       <td>Apoferritin (500 kDa)</td>
                       <td>Polara G2, Film, no Carbon, 200 kV</td>
                       <td>R. Henderson/ S. Chen</td>
                       <td>005</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>Apoferritin (500 kDa)</td>
                       <td>JEM3200FSC, DE-12 DDD, no Carbon, 300kV</td>
                       <td>W.Chiu/J.Jakana</td>
                       <td>006</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>TMV virus</td>
                       <td>CM200 FEG, TVIPS F416 CMOS camera, holey carbon, 200kV</td>
@@ -166,28 +167,28 @@
                       <td>Polara, TVIPS F416 CMOS camera, holey carbon, 300kV</td>
                       <td>H. Stahlberg / K. Goldie</td>
                       <td>008</td>
-                    </tr>  
+                    </tr>
                     <tr>
                       <td>Simulated Data</td>
                       <td>NA/NA/NA/300kV</td>
                       <td>J.Frank/ H. Liao</td>
                       <td>009</td>
-                    </tr>                                                                                                            
+                    </tr>
                   </tbody>
                 </table>
                 <div class="col-md-12 center">
                   <a href="http://i2pc.cnb.csic.es/3dembenchmark/LoadCtfInformation.htm#appendix1">More Information</a>
                 </div>
                 <div class="col-md-6 center">
-                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadTest Dataset</a><br />
+                  <a class="btn btn-sm btn-danger" href="{% url 'ctfdetectiondatasets' %}" role="button">DownloadTest Dataset</a><br />
                 </div>
                 <div class="col-md-6 center">
-                  <a class="btn btn-sm btn-danger" href="#" role="button">DownloadChallenge Dataset</a><br />              
-                </div>                          
+                  <a class="btn btn-sm btn-danger" href="{% url 'ctfdetectiondatasets' %}" role="button">DownloadChallenge Dataset</a><br />
+                </div>
               </div>
             </div>
           </div>
-        
+
         </div>
       </div>
     </div>

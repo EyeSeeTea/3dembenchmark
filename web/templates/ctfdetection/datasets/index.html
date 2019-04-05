@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="{% static "ms-icon-144x144.png" %}">
     <meta name="theme-color" content="#ffffff">
 
-    <title>3DEMBenchmark</title>
+    <title>3DEMBenchmark - CTF Detection</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
@@ -63,49 +63,34 @@
     <div id="wrapMain">
       <div class="container">
         <div class="row">
-          <!-- BEGIN CONTENT -->
-          <h2>Particle Picking (Demo) &gt; Particle Picking for Cryo-Electron Microscopy</h2>
-          <span class="sm-spacer"></span>
-          <h4>Gold Standards</h4>
-          <div class="table-responsive">
-              <table class="table">
-                  <thead>
-                      <tr>
-                          <th>Description</th>
-                          <th>Full Description</th>
-                          <th>Dataset</th>
-                          <th>Start Date / End Date</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Soluciones&amp;solucionId=1">Test KLH Mouche</a><br></td>
-                          <td>Manually picked</td>
-                          <td>Test (2 micrographs) KLH Dataset I: 82 defocus micrographs, coordinate <br>centers of ~1000 side-view particles, a preliminary 3D <br>reconstruction....</td>
-                          <td>31/03/2011 22:00<br></td>
-                      </tr>
-                      <tr>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Soluciones&amp;solucionId=3">Training KLH Mouche</a><br></td>
-                          <td>Manually picked</td>
-                          <td>Training (30 micrographs) KLH Dataset I: 82 defocus micrographs, <br>coordinate centers of ~1000 side-view particles, a preliminary 3D <br>reconstruction....</td>
-                          <td>31/03/2011 22:00</td>
-                      </tr>
-                      <tr>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Soluciones&amp;solucionId=7">Test Ad2 ts1</a></td>
-                          <td>Manually picked</td>
-                          <td>Test (2 micrographs) Ad2 ts1 Dataset: 308 micrographs, coordinate <br>centers of ~9.000 particles, a preliminary 3D reconstruction. Images <br>were a...</td>
-                          <td>31/03/2011 22:00<br></td>
-                      </tr>
-                      <tr>
-                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Soluciones&amp;solucionId=8">Training Ad2 ts1</a></td>
-                          <td>Manually picked</td>
-                          <td>Training (30 micrographs) Ad2 ts1 Dataset: 308 micrographs, coordinate <br>centers of ~9.000 particles, a preliminary 3D reconstruction. Images <br>were a...</td>
-                          <td>31/03/2011 22:00</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-          <!-- END CONTENT -->
+          <!-- CONTENT BEGINS -->
+            <h2>Download CTF Test Dataset</h2>
+            <hr style="height: 0px;">
+            <p>Two choices to download the Test Dataset.<br></p><button class="btn btn-danger btn-results" type="button">Download Test Dataset<br/><small>(Primary download site)</small></button>
+            <div class="btn-group" role="group"></div><button class="btn btn-default btn-results bt-bordered" type="button">Download Test Dataset<br /><small>(Mirror)</small></button>
+            <h2>Download CTF Test Dataset</h2>
+            <hr style="height: 0px;">
+            <p>The Challenge Dataset is split in 5 compressed files. Each file has 2 subdatasets except the last one which only contains the ninth subdataset.<br><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/pub/template.emx">HERE</a>&nbsp;you may download
+                a template in EMX format in order to help in the reporting of the defoci and astigmatism of the 181 micrographs forming the Challenge Dataset.<br></p>
+            <span class="sm-spacer"></span>
+            <p>Primary download site:<br></p>
+            <button class="btn btn-danger" type="button">Download Dataset 001 and 002</button>
+            <button class="btn btn-danger" type="button">Download Dataset 003 and 004</button>
+            <button class="btn btn-danger" type="button">Download Dataset 005 and 006</button>
+            <button class="btn btn-danger" type="button">Download Dataset 007 and 008</button>
+            <button class="btn btn-danger" type="button">Download Dataset 009</button>
+            <span class="sm-spacer"></span>
+            <p>Alternative mirror:<br></p>
+            <button class="btn btn-danger" type="button">Download Dataset 001 and 002</button>
+            <button class="btn btn-danger" type="button">Download Dataset 003 and 004</button>
+            <button class="btn btn-danger" type="button">Download Dataset 005 and 006</button>
+            <button class="btn btn-danger" type="button">Download Dataset 007 and 008</button>
+            <button class="btn btn-danger" type="button">Download Dataset 009</button>
+                <h2>Resources</h2>
+                <hr style="height: 0px;">
+                <p>- <a href="https://sourceforge.net/p/newxmipp/code/ci/master/tree/protocols/emx/">Download</a> a Python library that provides basic support for reading and writing EMX files<br> - <a href="http://i2pc.cnb.csic.es/emx/LoadTools.htm?type=ValidateXml">Form</a>            for validating EMX files<br></p>
+
+          <!-- CONTENT ENDS -->
         </div>
       </div>
     </div>

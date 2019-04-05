@@ -96,6 +96,35 @@ textarea {
 	height: 40px;
 }
 
+.sm-spacer {
+	display: block;
+	height: 10px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #ddd;
+}
+
+.btn-results {
+	text-align: left;
+
+}
+
+.bt-bordered {
+	border: 2px solid #d95350;
+}
+
+.last td {
+	border-bottom: 1px solid #ddd;
+}
+
+.table-list td {
+	border-top: 0px solid #fff !important;
+}
+
 .center {
 	text-align: center;
 }
