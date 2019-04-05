@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static "apple-icon-57x57.png" %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static "apple-icon-60x60.png" %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static "apple-icon-72x72.png" %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static "apple-icon-76x76.png" %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static "apple-icon-114x114.png" %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static "apple-icon-120x120.png" %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static "apple-icon-144x144.png" %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static "apple-icon-152x152.png" %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "apple-icon-180x180.png" %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% static "android-icon-192x192.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static "favicon-96x96.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon-16x16.png" %}">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static "ms-icon-144x144.png" %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>3DEMBenchmark - CTF Detection</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static "css/general_style.css" %}" type="text/css" />
+    <link href="{% static "css/jumbotron.css" %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    {% include "_navigation.html" %}
+
+    <header>
+      <div id="headerLine">
+        <div class="container">
+            <div class="row">
+                <span class="headerLink">
+                  <!-- <a href="particle-picking.html">Particle Picking</a>
+                  <a href="ctf-detection.html">CTF detection</a>
+                  <a href="resolution-enhancement.html">Resolution Enhancement</a> -->
+                </span>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapMain">
+      <div class="container">
+        <div class="row">
+          <!-- CONTENT BEGINS -->
+            <h2>Download CTF Test Dataset</h2>
+            <hr style="height: 0px;">
+            <p>Two choices to download the Test Dataset.<br></p><button class="btn btn-danger btn-results" type="button">Download Test Dataset<br/><small>(Primary download site)</small></button>
+            <div class="btn-group" role="group"></div><button class="btn btn-default btn-results bt-bordered" type="button">Download Test Dataset<br /><small>(Mirror)</small></button>
+            <h2>Download CTF Test Dataset</h2>
+            <hr style="height: 0px;">
+            <p>The Challenge Dataset is split in 5 compressed files. Each file has 2 subdatasets except the last one which only contains the ninth subdataset.<br><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/pub/template.emx">HERE</a>&nbsp;you may download
+                a template in EMX format in order to help in the reporting of the defoci and astigmatism of the 181 micrographs forming the Challenge Dataset.<br></p>
+            <span class="sm-spacer"></span>
+            <p>Primary download site:<br></p>
+            <button class="btn btn-danger" type="button">Download Dataset 001 and 002</button>
+            <button class="btn btn-danger" type="button">Download Dataset 003 and 004</button>
+            <button class="btn btn-danger" type="button">Download Dataset 005 and 006</button>
+            <button class="btn btn-danger" type="button">Download Dataset 007 and 008</button>
+            <button class="btn btn-danger" type="button">Download Dataset 009</button>
+            <span class="sm-spacer"></span>
+            <p>Alternative mirror:<br></p>
+            <button class="btn btn-danger" type="button">Download Dataset 001 and 002</button>
+            <button class="btn btn-danger" type="button">Download Dataset 003 and 004</button>
+            <button class="btn btn-danger" type="button">Download Dataset 005 and 006</button>
+            <button class="btn btn-danger" type="button">Download Dataset 007 and 008</button>
+            <button class="btn btn-danger" type="button">Download Dataset 009</button>
+                <h2>Resources</h2>
+                <hr style="height: 0px;">
+                <p>- <a href="https://sourceforge.net/p/newxmipp/code/ci/master/tree/protocols/emx/">Download</a> a Python library that provides basic support for reading and writing EMX files<br> - <a href="http://i2pc.cnb.csic.es/emx/LoadTools.htm?type=ValidateXml">Form</a>            for validating EMX files<br></p>
+
+          <!-- CONTENT ENDS -->
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footerStyle">
+      {% include "_footer.html" %}
+    </footer>
+
+    <script src="{% static "js/vendor/jquery-1.11.2.min.js" %}"></script>
+    <script src="{% static "js/vendor/bootstrap.min.js" %}"></script>
+  </body>
+</html>

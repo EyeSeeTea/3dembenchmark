@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 {% load static %}
 
 <html lang="en">
@@ -46,13 +46,27 @@
   <body>
     {% include "_navigation.html" %}
 
+    <header>
+      <div id="headerLine">
+        <div class="container">
+            <div class="row">
+                <span class="headerLink">
+                  <!-- <a href="particle-picking.html">Particle Picking</a>
+                  <a href="ctf-detection.html">CTF detection</a>
+                  <a href="resolution-enhancement.html">Resolution Enhancement</a> -->
+                </span>
+            </div>
+        </div>
+      </div>
+    </header>
+
     <div id="wrapMain">
       <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 center">
                 <h3>
-                  <a href="{% url 'page' %}" >
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  <a href="{% url 'particlepicking' %}" >
+                    <img src="static/img/task1.jpg" class="taskImage">
                     Particle Picking (Demo)
                   </a>
                 </h3>
@@ -61,29 +75,68 @@
                 </p>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-4 center">
                 <h3>
-                  <a href="{% url 'page' %}" >
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  <a href="{% url 'ctfdetection' %}" >
+                    <img src="static/img/task2.png" class="taskImage">
                     CTF detection
                   </a>
                 </h3>
                 <p>
-                  The CTF estimation challenge is a initiative of the Madrid Instruct Image Processing Center (I2PC) in collaboration with the National Center for Macromolecular Imaging (NCMI) at Houston. By participating in this challenge, researchers will have the opportunity to test their ability estimating some of the key parameters of the Electron Microscope Contrast Transfer Function on a large micrograph data set produced by well-known laboratories on a wide set of experimental conditions.
+                  The Contrast Transfer Function is a way of modeling the microscope aberrations. This benchmark helps designing algorithms aimed at establishing the quality of micrographs and determine the defocus and other CTF parameters.
                 </p>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-4 center">
                 <h3>
-                  <a href="{% url 'page' %}" >
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  <a href="{% url 'resolutionenhancement' %}" >
+                    <img src="static/img/task3.png" class="taskImage">
                     Resolution Enhancement
                   </a>
                 </h3>
                 <p>
-                  
                   The IEEE SP Cup is a competition that provides undergraduate students with the opportunity to form teams and work together to solve a challenging and interesting real-world problem using signal-processing techniques and methods. Three teams will be selected to present their work, and prizes will be awarded at ICASSP 2014. The title of this inaugural competition is "Image restoration/Super-resolution for Single Particle Analysis", proposed by the Bio Imaging and Signal Processing Technical Committee.
                 </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h2>About Us</h2>
+              </div>
+              <div class="col-md-8">
+                <span class="title">
+                  <p>
+                    The 3D Electron Microscopy Benchmark is located at the Biocomputing Unit of the Spanish National Center for Biotechnology (CNB-CSIC) and it is part of a joint initiative of the National Institute of Bioinformatics (INB-Instituto de Salud Carlos III) and the INSTRUCT Center for Image Processing in Microscopy (I2PC).
+                  </p>
+                  <p>
+                    INSTRUCT is a European project to provide infrastructures to Structural Biologists in order to determine the 3D structure of biological specimens. The INSTRUCT Image Processing Center is the European Reference Center for Image Processing in Transmission Electron Microscopy and X-ray Microscopy. It provides support to structural biologists in the use of the different software packages, it provides project support, and it develops software and standards oriented towards the standardization and simplification of the image processing tasks.
+                  </p>
+                  <p>
+                    Being at the intersection of two strategic European Research Initiatives in Structural Biology and Bioinformatics, our goal is to help the advance of new image processing approaches by providing a powerful infrastructure for the automatic and standardized benchmarking of new image processing applications.
+                  </p>
+                  <p>
+                    We want to work with all image processing software developers in the Structural Biology field, so that 3DEM Benchmark will indeed become a community effort. We start from the position that there is not a single methodology that suits all the problems, and, also, that there is no better way to learn than objectively studying the performance of new methods when confronted with realistic applications.
+                  </p>  
+              </div>
+              <div class="col-md-4 center aboutDetails">
+                  <div>
+                    <b>Telephone:</b> (+34) 91 585 4922
+                  </div>
+                  <div>
+                    <b>Fax:</b> (+34) 91 372 0112 / (+34) 91 585 4506
+                  </div>
+                  <div>
+                    <b>email:</b> 3dembenchmark@cnb.csic.es
+                  </div>
+                  <div>
+                    <b>
+                    Postal address
+                    </b>
+                    <br>Unidad de Biocomputación
+                    <br>Centro Nacional de Biotecnología
+                    <br>c/ Darwin, 3 (Universidad Autónoma de Madrid)
+                    <br>28049 Cantoblanco, Madrid (Spain)
+                  </div>
               </div>
             </div>
           </div>

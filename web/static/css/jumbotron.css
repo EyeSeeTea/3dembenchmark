@@ -93,7 +93,7 @@
 		background: url("/static/img/back50.png") no-repeat right, linear-gradient(to bottom,  #000000 0%,#26030e 38%,#26030e 38%,#530400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#530400',GradientType=0 ); /* IE6-9 */
 	}
-	.mainHead h2 {	
+	.mainHead h2 {
 	   font-size: 30px;
 	}
 	.mainHead p {
@@ -112,7 +112,7 @@
 
 @media (min-width: 1201px){
 
-	.mainHead h2 {	
+	.mainHead h2 {
 	   font-size: 30px;
 	}
 	.mainHead p {
@@ -134,9 +134,11 @@ header #headerRightContainer{
 */
 
 a {
-	color: #630000;
+	color: #cf264b;
+	text-decoration: none;
 }
 a:hover {
-	color: firebrick;
-	text-decoration: none;
+	color: #cf264b;
+	text-transform: bold;
+	text-decoration: underline;
 }

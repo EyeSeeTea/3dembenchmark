@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static "apple-icon-57x57.png" %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static "apple-icon-60x60.png" %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static "apple-icon-72x72.png" %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static "apple-icon-76x76.png" %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static "apple-icon-114x114.png" %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static "apple-icon-120x120.png" %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static "apple-icon-144x144.png" %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static "apple-icon-152x152.png" %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "apple-icon-180x180.png" %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% static "android-icon-192x192.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static "favicon-96x96.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon-16x16.png" %}">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static "ms-icon-144x144.png" %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>3DEMBenchmark - CTF Detection - Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static "css/general_style.css" %}" type="text/css" />
+    <link href="{% static "css/jumbotron.css" %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    {% include "_navigation.html" %}
+
+    <header>
+      <div id="headerLine">
+        <div class="container">
+            <div class="row">
+                <span class="headerLink">
+                  <!-- <a href="particle-picking.html">Particle Picking</a>
+                  <a href="ctf-detection.html">CTF detection</a>
+                  <a href="resolution-enhancement.html">Resolution Enhancement</a> -->
+                </span>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapMain">
+      <div class="container">
+        <div class="row">
+          <!-- CONTENT BEGINS -->
+          <h2>CTF detection &gt; CTF Estimation Challenge</h2>
+          <span class="sm-spacer"></span>
+          <h4>Experimental Estimation</h4>
+          <div class="table-responsive">
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th>Description</th>
+                          <th>Dataset</th>
+                          <th>Start Date / End Date</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Soluciones&amp;solucionId=60">Experimental Estimation</a><br></td>
+                          <td>Test Dataset<br></td>
+                          <td>20/07/2012 15:22</td>
+                      </tr>
+                      <tr></tr>
+                  </tbody>
+              </table>
+          </div>
+          <h4>Uploads</h4>
+          <div class="table-responsive">
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th>ID</th>
+                          <th>Description</th>
+                          <th>User</th>
+                          <th>Dataset</th>
+                          <th>Statistics - Test Dataset</th>
+                          <th>Micrographs Processed</th>
+                          <th>Experience</th>
+                          <th>Date</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=206">206</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults206' %}">Test 1</a><br></td>
+                          <td>SuperUser </td>
+                          <td>Test Dataset<br></td>
+                          <td>0.0744<br> ±0.1415<br></td>
+                          <td>100.00 %<br></td>
+                          <td>Beginner<br></td>
+                          <td>06/02/2013 17:11<br></td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=250">250</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults250' %}">w</a><br></td>
+                          <td>Roberto Marabini</td>
+                          <td>Test Dataset<br></td>
+                          <td>0.1282<br> ±0.3087<br></td>
+                          <td>100.00 %</td>
+                          <td>Beginner<br></td>
+                          <td>20/02/2013 15:00</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=256">256</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults256' %}">test dataset</a><br></td>
+                          <td>Rui Yan</td>
+                          <td>Test Dataset</td>
+                          <td>-0.0115<br> ±0.0463<br></td>
+                          <td>100.00 %<br></td>
+                          <td>Beginner<br></td>
+                          <td>22/03/2013 13:01<br></td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=257">257</a><br></td>
+                          <td><a href="{% url 'ctfdetectionresults257' %}">Test set</a><br></td>
+                          <td>Rouslan Efremov</td>
+                          <td>Test Dataset</td>
+                          <td>0.0362<br> ±0.1425</td>
+                          <td>100.00 %</td>
+                          <td>Beginner</td>
+                          <td>25/03/2013 09:28</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=292">292</a></td>
+                          <td><a href="{% url 'ctfdetectionresults292' %}">updated data for sets 3 and 4</a></td>
+                          <td>Rouslan Efremov</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Beginner</td>
+                          <td>12/07/2013 15:45</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=296">296</a></td>
+                          <td><a href="{% url 'ctfdetectionresults296' %}">set001-set009 Solution</a></td>
+                          <td>Rui Yan</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Beginner</td>
+                          <td>13/07/2013 07:27</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=297">297</a></td>
+                          <td><a href="{% url 'ctfdetectionresults297' %}">CTF estimated with command line ctffind3</a><br></td>
+                          <td>Martyn Winn</td>
+                          <td>Test Dataset<br></td>
+                          <td>0.0239<br> ±0.1411</td>
+                          <td>100.00 %</td>
+                          <td>Beginner</td>
+                          <td>15/07/2013 13:40</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=303">303</a></td>
+                          <td><a href="{% url 'ctfdetectionresults303' %}">set_001_EMAN2</a></td>
+                          <td>Xiaojun Huang</td>
+                          <td>Challenge Dataset<br></td>
+                          <td></td>
+                          <td>8.12 %</td>
+                          <td>Beginner</td>
+                          <td>28/08/2013 06:33</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=310">310</a></td>
+                          <td><a href="{% url 'ctfdetectionresults310' %}">Best of Appion among Ace1, Ace2, and ctffind for novice</a></td>
+                          <td>Amber Herold</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %<br></td>
+                          <td>Beginner</td>
+                          <td>03/09/2013 16:24</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=336">336</a></td>
+                          <td><a href="{% url 'ctfdetectionresults336' %}">set_005,6,9</a></td>
+                          <td>Liangliang Kong</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>29.95 %<br></td>
+                          <td>Beginner<br></td>
+                          <td>15/09/2013 04:39</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=207">207</a></td>
+                          <td><a href="{% url 'ctfdetectionresults207' %}">Test 2</a></td>
+                          <td>SuperUser </td>
+                          <td>Test Dataset</td>
+                          <td>-0.0794<br> ±0.486</td>
+                          <td>100.00 %<br></td>
+                          <td>Intermediate</td>
+                          <td>06/02/2013 17:12</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=342">342</a></td>
+                          <td><a href="{% url 'ctfdetectionresults342' %}">ewer</a><br></td>
+                          <td>Roberto Marabini</td>
+                          <td>Challenge Dataset<br></td>
+                          <td></td>
+                          <td>8.12 %</td>
+                          <td>Intermediate</td>
+                          <td>04/10/2013 12:49</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=344">344</a></td>
+                          <td><a href="{% url 'ctfdetectionresults344' %}">CTF estimation with IMAGIC</a><br></td>
+                          <td>Ricardo Righetto</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>87.31 %</td>
+                          <td>Expert</td>
+                          <td>09/10/2013 23:46</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=282">282</a></td>
+                          <td><a href="{% url 'ctfdetectionresults282' %}">Xmipp 3.0</a><br></td>
+                          <td>Javi Vargas</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>20/05/2013 09:01</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=287">287</a></td>
+                          <td><a href="{% url 'ctfdetectionresults287' %}">Results obtained by CTFFIND3 - with corrected datasets 3 &amp; 4</a></td>
+                          <td>Nikolaus Grigorieff</td>
+                          <td>Challenge Dataset<br></td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>28/05/2013 21:14</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=291">291</a></td>
+                          <td><a href="{% url 'ctfdetectionresults291' %}">Xmipp 3.0 COSS</a></td>
+                          <td>Carlos Oscar Sorzano</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>18/06/2013 11:44</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=298">298</a></td>
+                          <td><a href="{% url 'ctfdetectionresults298' %}">CTF challenge</a></td>
+                          <td>Slavica Jonic</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>82.74 %</td>
+                          <td>Developer</td>
+                          <td>31/07/2013 21:49</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=299">299</a></td>
+                          <td><a href="{% url 'ctfdetectionresults299' %}">CTF Results from PARTICLE</a><br></td>
+                          <td>James Chen</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>23/08/2013 19:16</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=300">300</a></td>
+                          <td><a href="{% url 'ctfdetectionresults300' %}">ACE2 Expert final submission</a></td>
+                          <td>Neil Voss</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>24/08/2013 15:58</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=301">301</a></td>
+                          <td><a href="{% url 'ctfdetectionresults301' %}">Appion Interactive CTF Submission</a></td>
+                          <td>Neil Voss</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>24/08/2013 17:22</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=304">304</a></td>
+                          <td><a href="{% url 'ctfdetectionresults304' %}">Phasor CTF dataset</a><br></td>
+                          <td>Neil Voss</td>
+                          <td>Challenge Dataset<br></td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>30/08/2013 15:26</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=312">312</a></td>
+                          <td><a href="{% url 'ctfdetectionresults312' %}">Bsoft automated CTF fitting</a></td>
+                          <td>Bernard Heymann</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>05/09/2013 21:22</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=314">314</a></td>
+                          <td><a href="{% url 'ctfdetectionresults314' %}">CTF results with FEI prototype</a></td>
+                          <td>Erik Franken</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>09/09/2013 14:43</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=318">318</a></td>
+                          <td><a href="{% url 'ctfdetectionresults318' %}">pySPIDER</a></td>
+                          <td>Robert Langlois</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>11/09/2013 00:16</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=337">337</a></td>
+                          <td><a href="{% url 'ctfdetectionresults337' %}">CTF Estiamtion TU Delft/LUMC</a></td>
+                          <td>Milos Vulovic</td>
+                          <td>Challenge Dataset<br></td>
+                          <td></td>
+                          <td>100.00 %</td>
+                          <td>Developer</td>
+                          <td>15/09/2013 22:05</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=339">339</a></td>
+                          <td><a href="{% url 'ctfdetectionresults339' %}">EMAN2.1 - rough, whole frame, no astig</a></td>
+                          <td>Steven Ludtke</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>95.43 %</td>
+                          <td>Developer</td>
+                          <td>03/10/2013 09:13</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=340">340</a></td>
+                          <td><a href="{% url 'ctfdetectionresults340' %}">EMAN2.1 - particle-based, no astig</a></td>
+                          <td>Steven Ludtke</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>94.92 %</td>
+                          <td>Developer</td>
+                          <td>03/10/2013 09:16</td>
+                      </tr>
+                      <tr>
+                          <td><a href="http://arquimedes.cnb.csic.es:8680/3dembenchmark/ProcessAnalyze.htm?opcion=Descargar Upload&amp;solucionId=341">341</a></td>
+                          <td><a href="{% url 'ctfdetectionresults341' %}">EMAN2.1 - particle-based, with astigmatism</a></td>
+                          <td>Steven Ludtke</td>
+                          <td>Challenge Dataset</td>
+                          <td></td>
+                          <td>54.31 %</td>
+                          <td>Developer</td>
+                          <td>03/10/2013 09:28</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <!-- CONTENT ENDS -->
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footerStyle">
+      {% include "_footer.html" %}
+    </footer>
+
+    <script src="{% static "js/vendor/jquery-1.11.2.min.js" %}"></script>
+    <script src="{% static "js/vendor/bootstrap.min.js" %}"></script>
+  </body>
+</html>
